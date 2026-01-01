@@ -55,11 +55,12 @@
 
         h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 38px;
+            font-size: clamp(24px, 8vw, 38px);
             font-weight: 500;
             color: #2A332D;
             margin-bottom: 8px;
             letter-spacing: 0.2em;
+            white-space: nowrap;
         }
 
         .tagline {
@@ -162,10 +163,6 @@
             .logo {
                 width: 70px;
                 height: 70px;
-            }
-
-            h1 {
-                font-size: 34px;
             }
         }
     </style>
