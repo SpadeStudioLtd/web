@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Memo - SPADE STUDIO</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #737373;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #2A332D;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 34px;
+            overflow: hidden;
+            margin: 0 auto 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: #2A332D;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 17px;
+            color: #666;
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+        }
+
+        .feature-section {
+            margin-bottom: 32px;
+        }
+
+        .feature-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .feature-section p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin-bottom: 12px;
+        }
+
+        .feature-section ul {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #4a4a4a;
+            padding-left: 20px;
+        }
+
+        .feature-section li {
+            margin-bottom: 6px;
+        }
+
+        .closing {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .closing p {
+            margin-bottom: 16px;
+        }
+
+        .closing p:last-child {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #333;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 32px 20px;
+            }
+
+            .app-icon {
+                width: 120px;
+                height: 120px;
+                border-radius: 27px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Spade Studio</a>
+
+        <div class="app-header">
+            <div class="app-icon">
+                <img src="gift-memo-icon.png" alt="Gift Memo App Icon">
+            </div>
+            <h1>Gift Memo</h1>
+            <p class="tagline">Capture gift ideas whenever inspiration strikes. Never forget the perfect gift again.</p>
+        </div>
+
+        <p class="description">
+            You spot the perfect gift for your mom in July, but her birthday isn't until December. By then, you've completely forgotten. Gift Memo fixes this.
+        </p>
+        <p class="description">
+            It's a simple app for capturing gift ideas whenever inspiration strikes—so you're never scrambling at the last minute.
+        </p>
+
+        <div class="feature-section">
+            <h2>Never Lose a Gift Idea</h2>
+            <p>Browsing Amazon or shopping online? Use the share button to save gift ideas directly to Gift Memo. No app switching, no trying to remember later.</p>
+        </div>
+
+        <div class="feature-section">
+            <h2>Get Reminded Before It's Too Late</h2>
+            <p>Set birthday reminders for the people you care about. Choose when to be notified: two weeks before, a few days before, or the day of. When the reminder arrives, your saved gift ideas are right there waiting.</p>
+        </div>
+
+        <div class="feature-section">
+            <h2>Plan Together With a Partner</h2>
+            <p>Share your gift list with your spouse or partner. Coordinate who's buying what, avoid duplicates, and make holiday planning easier.</p>
+        </div>
+
+        <div class="feature-section">
+            <h2>Everything in One Place</h2>
+            <ul>
+                <li>Add people and their birthdays</li>
+                <li>Create custom events (anniversaries, holidays, etc.)</li>
+                <li>Save gift ideas with photos, prices, and links</li>
+                <li>Mark gifts as purchased</li>
+                <li>Set budgets per person or event</li>
+            </ul>
+        </div>
+
+        <div class="feature-section">
+            <h2>Syncs Across All Your Devices</h2>
+            <p>Everything syncs automatically through iCloud. Save a gift idea on your iPhone, see it instantly on your iPad.</p>
+        </div>
+
+        <div class="feature-section">
+            <h2>Who It's For</h2>
+            <p>Parents tracking extended family birthdays. Partners coordinating holiday shopping. Anyone who spots great gifts months early but forgets them when the occasion arrives.</p>
+        </div>
+
+        <div class="closing">
+            <p>No complicated features. No social pressure. Just a simple tool to help you remember the people you care about—and the gifts they'd love.</p>
+            <p>Download Gift Memo and never forget the perfect gift again.</p>
+        </div>
+    </div>
+</body>
+</html>
