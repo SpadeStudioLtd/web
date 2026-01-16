@@ -10,6 +10,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg-primary: #f5f5f5;
+            --bg-card: #ffffff;
+            --bg-card-hover: #fafafa;
+            --text-primary: #1a1a1a;
+            --text-heading: #2A332D;
+            --text-secondary: #4a4a4a;
+            --text-muted: #666;
+            --text-link: #737373;
+            --text-strong: #333;
+            --text-placeholder: #999;
+            --border-color: #e5e5e5;
+            --shadow-color: rgba(0, 0, 0, 0.12);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-card: #2a2a2a;
+                --bg-card-hover: #333333;
+                --text-primary: #f5f5f5;
+                --text-heading: #ffffff;
+                --text-secondary: #b0b0b0;
+                --text-muted: #999;
+                --text-link: #a0a0a0;
+                --text-strong: #e0e0e0;
+                --text-placeholder: #777;
+                --border-color: #3a3a3a;
+                --shadow-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -18,10 +50,10 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
+            background: var(--bg-primary);
             min-height: 100vh;
             padding: 40px 20px;
-            color: #1a1a1a;
+            color: var(--text-primary);
         }
 
         .container {
@@ -29,27 +61,27 @@
             width: 100%;
             margin: 0 auto;
             padding: 40px;
-            background: #f5f5f5;
+            background: var(--bg-primary);
         }
 
         .back-link {
             display: inline-block;
             margin-bottom: 30px;
             font-size: 14px;
-            color: #737373;
+            color: var(--text-link);
             text-decoration: none;
             transition: color 0.2s ease;
         }
 
         .back-link:hover {
-            color: #2A332D;
+            color: var(--text-heading);
         }
 
         .app-header {
             text-align: center;
             margin-bottom: 40px;
             padding-bottom: 30px;
-            border-bottom: 1px solid #e5e5e5;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .app-icon {
@@ -58,7 +90,7 @@
             border-radius: 34px;
             overflow: hidden;
             margin: 0 auto 24px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 8px 24px var(--shadow-color);
         }
 
         .app-icon img {
@@ -71,14 +103,14 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 32px;
             font-weight: 500;
-            color: #2A332D;
+            color: var(--text-heading);
             margin-bottom: 12px;
             letter-spacing: -0.5px;
         }
 
         .tagline {
             font-size: 17px;
-            color: #666;
+            color: var(--text-muted);
             font-weight: 400;
             line-height: 1.5;
             max-width: 400px;
@@ -88,7 +120,7 @@
         .description {
             font-size: 16px;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             margin-bottom: 40px;
         }
 
@@ -99,7 +131,7 @@
         .feature-section h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
-            color: #1a1a1a;
+            color: var(--text-primary);
             margin-bottom: 12px;
             font-weight: 600;
             letter-spacing: -0.2px;
@@ -108,14 +140,14 @@
         .feature-section p {
             font-size: 15px;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             margin-bottom: 12px;
         }
 
         .feature-section ul {
             font-size: 15px;
             line-height: 1.8;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             padding-left: 20px;
         }
 
@@ -126,10 +158,10 @@
         .closing {
             font-size: 15px;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             margin-top: 40px;
             padding-top: 30px;
-            border-top: 1px solid #e5e5e5;
+            border-top: 1px solid var(--border-color);
         }
 
         .closing p {
@@ -139,19 +171,19 @@
         .closing p:last-child {
             margin-bottom: 0;
             font-weight: 500;
-            color: #333;
+            color: var(--text-strong);
         }
 
         .privacy-policy {
             margin-top: 60px;
             padding-top: 40px;
-            border-top: 1px solid #e5e5e5;
+            border-top: 1px solid var(--border-color);
         }
 
         .privacy-policy h2 {
             font-family: 'Montserrat', sans-serif;
             font-size: 22px;
-            color: #1a1a1a;
+            color: var(--text-primary);
             margin-bottom: 8px;
             font-weight: 500;
             letter-spacing: -0.3px;
@@ -159,14 +191,14 @@
 
         .privacy-policy .last-updated {
             font-size: 14px;
-            color: #999;
+            color: var(--text-placeholder);
             margin-bottom: 32px;
         }
 
         .privacy-policy h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 17px;
-            color: #1a1a1a;
+            color: var(--text-primary);
             margin-top: 28px;
             margin-bottom: 12px;
             font-weight: 600;
@@ -176,7 +208,7 @@
         .privacy-policy h4 {
             font-family: 'Montserrat', sans-serif;
             font-size: 15px;
-            color: #333;
+            color: var(--text-strong);
             margin-top: 20px;
             margin-bottom: 8px;
             font-weight: 600;
@@ -185,14 +217,14 @@
         .privacy-policy p {
             font-size: 14px;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             margin-bottom: 12px;
         }
 
         .privacy-policy ul {
             font-size: 14px;
             line-height: 1.7;
-            color: #4a4a4a;
+            color: var(--text-secondary);
             padding-left: 20px;
             margin-bottom: 12px;
         }
@@ -202,18 +234,18 @@
         }
 
         .privacy-policy strong {
-            color: #333;
+            color: var(--text-strong);
         }
 
         .privacy-policy hr {
             border: none;
-            border-top: 1px solid #e5e5e5;
+            border-top: 1px solid var(--border-color);
             margin: 32px 0;
         }
 
         .privacy-policy .note {
             font-size: 13px;
-            color: #666;
+            color: var(--text-muted);
             font-style: italic;
         }
 
@@ -240,7 +272,10 @@
 
         <div class="app-header">
             <div class="app-icon">
-                <img src="gift-memo-icon.png" alt="Gift Memo App Icon">
+                <picture>
+                    <source srcset="gift-memo-icon-dark.png" media="(prefers-color-scheme: dark)">
+                    <img src="gift-memo-icon.png" alt="Gift Memo App Icon">
+                </picture>
             </div>
             <h1>Gift Memo</h1>
             <p class="tagline">Capture gift ideas whenever inspiration strikes. Never forget the perfect gift again.</p>
@@ -320,17 +355,12 @@
             <p>You can deny these permissions and still use the app with manual data entry.</p>
 
             <h4>Automatically Collected Information</h4>
-            <ul>
-                <li><strong>Device Name:</strong> Used to identify your device for iCloud sync</li>
-            </ul>
+            <p>We do not automatically collect any information.</p>
 
             <h3>How We Store Your Data</h3>
 
             <h4>Local Storage</h4>
             <p>All your data is stored locally on your device using Apple's SwiftData framework. This data is encrypted by iOS.</p>
-
-            <h4>iCloud Sync</h4>
-            <p>If you enable iCloud sync, your data is stored in your personal iCloud account using Apple's CloudKit service. This allows your data to sync across your Apple devices. You can disable iCloud sync at any time in the app settings.</p>
 
             <h3>Third-Party Services</h3>
 
@@ -339,21 +369,18 @@
             <h4>Network Requests</h4>
             <p>When you share a product URL to Gift Memo, the app fetches publicly available product information (title, price, image) directly from that website to help you save gift ideas.</p>
 
-            <h4>Affiliate Links</h4>
-            <p>Product URLs from Amazon may be modified to include an affiliate tag. This helps support the app's development at no cost to you.</p>
-
             <h3>Data Sharing</h3>
-            <p>We do not sell, trade, or transfer your personal information to third parties. Your data is only shared with Apple's iCloud service if you enable sync.</p>
+            <p>We do not sell, trade, or transfer your personal information to third parties. Your data stays on your device.</p>
 
             <h3>Data Retention</h3>
-            <p>Your data remains on your device and in your iCloud account until you delete it. We do not have access to your data.</p>
+            <p>Your data remains on your device until you delete it. We do not have access to your data.</p>
 
             <h3>Your Rights</h3>
             <p>You have full control over your data:</p>
             <ul>
                 <li><strong>View:</strong> All your data is visible within the app</li>
                 <li><strong>Edit:</strong> You can modify any information at any time</li>
-                <li><strong>Delete:</strong> You can delete individual items or use "Erase All Data" in Settings to permanently delete all data from your device and iCloud</li>
+                <li><strong>Delete:</strong> You can delete individual items or use "Erase All Data" in Settings to permanently delete all data from your device</li>
             </ul>
 
             <h3>Children's Privacy</h3>
@@ -363,7 +390,6 @@
             <p>Your data is protected by:</p>
             <ul>
                 <li>iOS device encryption</li>
-                <li>Apple's CloudKit encryption in transit</li>
                 <li>Your device passcode and/or biometric authentication</li>
             </ul>
 
