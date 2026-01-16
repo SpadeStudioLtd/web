@@ -81,14 +81,9 @@
             margin: 0 auto 30px;
         }
 
-        .logo svg {
+        .logo img {
             width: 100%;
             height: 100%;
-        }
-
-        .logo svg rect {
-            fill: var(--text-heading);
-            stroke: var(--text-heading);
         }
 
         h1 {
@@ -292,12 +287,10 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="323.5" y="334.5" width="136" height="136" transform="rotate(90 323.5 334.5)" fill="#2A332D" stroke="#2A332D"/>
-                    <rect x="304.5" y="60.5" width="98" height="98" transform="rotate(90 304.5 60.5)" stroke="#2A332D" stroke-width="39"/>
-                    <rect x="275" y="207" width="98" height="39" transform="rotate(90 275 207)" fill="#2A332D"/>
-                    <rect x="275" y="207" width="98" height="39" transform="rotate(90 275 207)" stroke="#2A332D"/>
-                </svg>
+                <picture>
+                    <source srcset="favicon-dark-180x180.png" media="(prefers-color-scheme: dark)">
+                    <img src="favicon-180x180.png" alt="Spade Studio Logo">
+                </picture>
             </div>
 
             <h1>SPADE STUDIO</h1>
